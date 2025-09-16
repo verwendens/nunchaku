@@ -102,7 +102,7 @@ if __name__ == "__main__":
     assert len(sm_targets) > 0, "No SM targets found"
 
     GCC_FLAGS = ["-DENABLE_BF16=1", "-DBUILD_NUNCHAKU=1", "-fvisibility=hidden", "-g", "-std=c++20", "-UNDEBUG", "-Og"]
-    MSVC_FLAGS = ["/DENABLE_BF16=1", "/DBUILD_NUNCHAKU=1", "/std:c++20", "/UNDEBUG", "/Zc:__cplusplus", "/FS"]
+    MSVC_FLAGS = ["/DENABLE_BF16=1", "/DBUILD_NUNCHAKU=1", "/std:c++17", "/UNDEBUG", "/Zc:__cplusplus", "/FS"]
     NVCC_FLAGS = [
         "-DENABLE_BF16=1",
         "-DBUILD_NUNCHAKU=1",
